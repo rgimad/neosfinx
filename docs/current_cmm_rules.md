@@ -21,3 +21,10 @@ int a = *ptr1; // = 0xBEEFF00D
 int b = *ptr2; // = 0xD
 ```
 So, like in C, dereferenced value depends on pointer type
+
+### Limitations:
+You cannot dereference expressions:
+```
+byte *p = #aboba;
+byte b = *(p + 1); // gives error
+```
