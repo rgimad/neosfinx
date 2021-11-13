@@ -2,6 +2,7 @@
 
 | - or, [] - 0 or 1 times, {} - 0 or more times
 
+```
 translation-unit = {external-declaration};
 
 external-declaration = function-definition
@@ -276,3 +277,4 @@ jump-statement = 'goto', identifier, ';'
                | 'continue', ';'
                | 'break', ';'
                | 'return', [expression], ';';
+```
