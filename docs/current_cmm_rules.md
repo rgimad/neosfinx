@@ -28,3 +28,19 @@ You cannot dereference expressions:
 byte *p = #aboba;
 byte b = *(p + 1); // gives error
 ```
+You cannot declare pointers to structures, also there's no ```->``` operator:
+```
+struct foobar {
+  int foo;
+  int bar;
+};
+...
+foobar *f; // gives error
+```
+You might ask: how to get value of structure field is you have only address of structure?
+
+Solution:
+```
+ESI = address_of_structure_instance;
+int field_value = ESI.foobar.foo;
+```
