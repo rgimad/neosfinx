@@ -1,4 +1,5 @@
-## EBNF grammar of Neosfinx language
+EBNF grammar of Neosfinx language
 
 | - or, [] - 0 or 1 times, {} - 0 or more times
 
+----------------
