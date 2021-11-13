@@ -85,8 +85,8 @@ SYMBOL  | FUNCTION                  | EXAMPLE
     :   | dynamic procedure         | : functionname () // declares functionname
     $   | assemly instruction       | $ PUSH AX     // pushes AX to the stack
     #   | get address (like & in C) | loc = #cow;   // loc = address of cow
-        | or directive              |  #resize FALSE
+        | or directive              | #resize FALSE
     !   | оператор NOT или смена    | !x_var;  if(!proc())
         | флага операции сравнения. | 
-   ...  | any number of arguments   |  void proc(...);
-   ::   |  scope resolution operator|  ::var = 0;
+   ...  | any number of arguments   | void proc(...);
+   ::   |  scope resolution operator| ::var = 0;
