@@ -43,50 +43,50 @@ __TIME__    __VER1__     __VER2__    __WEEKDAY__ __YEAR__
 ================================================
 Operators:
 ================================================
-SYMBOL|FUNCTION                  |EXAMPLE
-  --------------------------------------------------------------------
-    /*  |begin comment block       |/* comment */
-    */  |end comment block         |/* comment */
-        |                          |
-    //  |comment until line end    |// комментарий
-        |                          |
-     =  |assign                    |AX = 12;
-     +  |add                  |AX = BX + 12;
-     -  |subract                 |house = dog - church;
-     *  |multiply or pointer       |x = y * z; AL = * var;
-     /  |divide                    |x1 = dog / legs;
-     &  |bitwise AND               |polution = stupid & pointless;
-     |  |bitwise OR                |yes = i | mabe;
-     ^  |bitwise XOR               |snap = got ^ power;
-    <<  |left bit shift            |x = y << z;
-    >>  |right bit shift           |x = y >> z;
-        |                          |
-    +=  |add and assign            |fox += 12;   // fox = fox +12;
-    -=  |subract and assign        |cow -= BX;   // cow = cow - BX;
-    *=  |multiply and assign       |a *= b;      // a = a * b;
-    /=  |divide and assign         |a /= b;      // a = a / b;
-    &=  |bitwise AND and assign    |p &= q;      // p = p & q;
-    |=  |bitwise OR and assign     |p |= z;      // p = p | z;
-    ^=  |bitwise XOR and assign    |u ^= s;      // u = u ^ s;
-    <<= |shift bit left and assign |x <<= z;     // x = x << z
-    >>= |shift bit right and assign|x >>= z;     // x = x >> z
-        |                          |
-    ><  |swap values               |x >< y; /* меняет местами значения x и y */
-        |                          |
-    ==  |equal                     |IF(AX == 12)
-     >  |greater                   |IF(junk > BOGUS)
-     <  |less                      |if( x < y )
-    >=  |greater                   equal |if(AX >= 12)
-    <=  |less equal                |IF(BL <= CH)
-   !=   |not equal                 |IF(girl != boy)
-    <>  |not equal                 |if (cat<>dog) /* same as != */
-        |                          |
-    @   |paste code                |@ COLDBOOT(); /* pastes code of COLDBOOT here */
-    :   |dynamic procedure         |: functionname () // declares functionname
-    $   |assemly instruction       |$ PUSH AX   /* заносит AX в стек */
-    #   |get address (like & in C) |loc = #cow;    /* loc = address of cow */
-        |or directive              | #resize FALSE
-    !   |оператор NOT или смена    |!x_var;  if(!proc())
-        |флага операции сравнения. |
-   ...  |any number of arguments   | void proc(...);
-   ::   | scope resolution operator| ::var=0;
+SYMBOL  | FUNCTION                  | EXAMPLE
+--------------------------------------------------------------------
+    /*  | begin comment block       | /* comment */
+    */  | end comment block         | /* comment */
+        |                           | 
+    //  | comment until line end    | // комментарий
+        |                           | 
+     =  | assign                    | AX = 12;
+     +  | add                       | AX = BX + 12;
+     -  | subract                   | house = dog - church;
+     *  | multiply or pointer       | x = y * z; AL = * var;
+     /  | divide                    | x1 = dog / legs;
+     &  | bitwise AND               | polution = stupid & pointless;
+     |  | bitwise OR                | yes = i | mabe;
+     ^  | bitwise XOR               | snap = got ^ power;
+    <<  | left bit shift            | x = y << z;
+    >>  | right bit shift           | x = y >> z;
+        |                           | 
+    +=  | add and assign            | fox += 12;   // fox = fox +12;
+    -=  | subract and assign        | cow -= BX;   // cow = cow - BX;
+    *=  | multiply and assign       | a *= b;      // a = a * b;
+    /=  | divide and assign         | a /= b;      // a = a / b;
+    &=  | bitwise AND and assign    | p &= q;      // p = p & q;
+    | = | bitwise OR and assign     | p | = z;     // p = p |  z;
+    ^=  | bitwise XOR and assign    | u ^= s;      // u = u ^ s;
+    <<= | shift bit left and assign | x <<= z;     // x = x << z
+    >>= | shift bit right and assign| x >>= z;     // x = x >> z
+        |                           | 
+    ><  | swap values               | x >< y; // swaps x and y values
+        |                           | 
+    ==  | equal                     | IF(AX == 12)
+     >  | greater                   | IF(junk > BOGUS)
+     <  | less                      | if( x < y )
+    >=  | greater equal             | if(AX >= 12)
+    <=  | less equal                | IF(BL <= CH)
+   !=   | not equal                 | IF(girl != boy)
+    <>  | not equal                 | if (cat<>dog) // same as !=
+        |                           | 
+    @   | paste code                | @ COLDBOOT(); // pastes code of COLDBOOT here
+    :   | dynamic procedure         | : functionname () // declares functionname
+    $   | assemly instruction       | $ PUSH AX     // pushes AX to the stack
+    #   | get address (like & in C) | loc = #cow;   // loc = address of cow
+        | or directive              |  #resize FALSE
+    !   | оператор NOT или смена    | !x_var;  if(!proc())
+        | флага операции сравнения. | 
+   ...  | any number of arguments   |  void proc(...);
+   ::   |  scope resolution operator|  ::var = 0;
