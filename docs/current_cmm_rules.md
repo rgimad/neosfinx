@@ -17,8 +17,8 @@ You can dereference pointers using ```*```:
 dword x = 0xBEEFF00D;
 dword *ptr1 = #x;
 byte *ptr2 = #x;
-int a = *ptr1; // = 0xBEEFF00D
-int b = *ptr2; // = 0xD
+int a = *ptr1; // a = 0xBEEFF00D
+int b = *ptr2; // b = 0xD
 ```
 So, like in C, dereferenced value depends on pointer type
 
