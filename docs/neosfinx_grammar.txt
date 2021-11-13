@@ -66,7 +66,7 @@ SYMBOL  | FUNCTION                  | EXAMPLE
     *=  | multiply and assign       | a *= b;      // a = a * b;
     /=  | divide and assign         | a /= b;      // a = a / b;
     &=  | bitwise AND and assign    | p &= q;      // p = p & q;
-    | = | bitwise OR and assign     | p | = z;     // p = p |  z;
+    |=  | bitwise OR and assign     | p | = z;     // p = p |  z;
     ^=  | bitwise XOR and assign    | u ^= s;      // u = u ^ s;
     <<= | shift bit left and assign | x <<= z;     // x = x << z
     >>= | shift bit right and assign| x >>= z;     // x = x >> z
@@ -78,7 +78,7 @@ SYMBOL  | FUNCTION                  | EXAMPLE
      <  | less                      | if( x < y )
     >=  | greater equal             | if(AX >= 12)
     <=  | less equal                | IF(BL <= CH)
-   !=   | not equal                 | IF(girl != boy)
+    !=  | not equal                 | IF(girl != boy)
     <>  | not equal                 | if (cat<>dog) // same as !=
         |                           | 
     @   | paste code                | @ COLDBOOT(); // pastes code of COLDBOOT here
