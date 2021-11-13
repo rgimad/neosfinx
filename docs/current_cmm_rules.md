@@ -22,7 +22,7 @@ int b = *ptr2; // = 0xD
 ```
 So, like in C, dereferenced value depends on pointer type
 
-### Limitations:
+#### Limitations:
 You cannot dereference expressions:
 ```
 byte *p = #aboba;
