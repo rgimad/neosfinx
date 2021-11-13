@@ -3,3 +3,38 @@ EBNF grammar of Neosfinx language
 | - or, [] - 0 or 1 times, {} - 0 or more times
 
 ----------------
+
+
+Keywords:
+
+BREAK  CASE    CONTINUE  ELSE    EXTRACT  FALSE  FOR
+FROM   GOTO    IF        LOOPNZ  RETURN   SWITCH TRUE
+WHILE
+
+_export  asm     break   byte      case     cdecl   char       continue
+default  do      dword   else      enum     extern  far        fastcall
+float    for     goto    if        inline   int     interrupt  long
+loop     loopnz  pascal  return    short    signed  sizeof     static
+stdcall  struct  switch  union     unsigned void    while      word
+
+ESCHAR  ESBYTE  ESINT  ESWORD  ESLONG  ESDWORD  ESFLOAT
+CSCHAR  CSBYTE  CSINT  CSWORD  CSLONG  CSDWORD  CSFLOAT
+SSCHAR  SSBYTE  SSINT  SSWORD  SSLONG  SSDWORD  SSFLOAT
+DSCHAR  DSBYTE  DSINT  DSWORD  DSLONG  DSDWORD  DSFLOAT
+FSCHAR  FSBYTE  FSINT  FSWORD  FSLONG  FSDWORD  FSFLOAT
+GSCHAR  GSBYTE  GSINT  GSWORD  GSLONG  GSDWORD  GSFLOAT
+
+CARRYFLAG    MINUSFLAG  NOTCARRYFLAG  NOTOVERFLOW
+NOTZEROFLAG  OVERFLOW   PLUSFLAG      ZEROFLAG
+
+AX   CX   DX   BX   SP   BP   SI   DI
+EAX  ECX  EDX  EBX  ESP  EBP  ESI  EDI
+AL   CL   DL   BL   AH   CH   DH   BH
+ES   CS   SS   DS   FS   GS
+
+ST(0)  ST(1)  ST(2)  ST(3)  ST(4)  ST(5)  ST(6)  ST(7)  ST
+st(0)  st(1)  st(2)  st(3)  st(4)  st(5)  st(6)  st(7)  st
+
+__CODEPTR__ __COMPILER__ __DATAPTR__ __DATESTR__ __DATE__    __DAY__
+__HOUR__    __LINE__     __MINUTE__  __MONTH__   __POSTPTR__ __SECOND__
+__TIME__    __VER1__     __VER2__    __WEEKDAY__ __YEAR__
